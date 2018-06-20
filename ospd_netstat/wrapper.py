@@ -61,7 +61,7 @@ class OSPDnetstat(OSPDaemonSimpleSSH):
     def __init__(self, certfile, keyfile, cafile):
         """ Initializes the ospd-netstat daemon's internal data. """
         super(OSPDnetstat, self).__init__(certfile=certfile, keyfile=keyfile,
-                                       cafile=cafile)
+                                          cafile=cafile)
         self.server_version = __version__
         self.scanner_info['name'] = 'netstat'
         self.scanner_info['version'] = 'depends on the local installation at the target host'
@@ -87,7 +87,7 @@ class OSPDnetstat(OSPDaemonSimpleSSH):
 
         if result is None:
             self.add_scan_error(scan_id, host=target,
-              value="A problem occurred trying to execute 'netstat'.")
+                                value="A problem occurred trying to execute 'netstat'.")
             self.add_scan_error(scan_id, host=target,
                                 value="The result of 'netstat' was empty.")
             return 2
@@ -126,6 +126,7 @@ class OSPDnetstat(OSPDaemonSimpleSSH):
             self.add_scan_host_detail(scan_id, host=target, name="tcp_ports",
                                       value=", ".join(tcp_ports))
         return 1
+
 
 def main():
     """ OSP netstat main function. """
