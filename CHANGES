@@ -1,0 +1,21 @@
+SUMMARY OF RELEASE CHANGES FOR OSPD-NETSTAT
+===========================================
+
+For detailed code changes, please visit
+ https://github.com/greenbone/ospd-netstat/commits/master
+or get the entire source code repository and view log history:
+$ git clone https://github.com/greenbone/ospd-netstat.git
+$ cd ospd-netstat && git log
+
+
+ospd-netstat 1.0b1 (2015-10-18)
+
+This is the first public beta release of ospd-netstat for the Open
+Vulnerability Assessment System (OpenVAS).
+
+OSPd-netstat is an OSP server implementation to allow OpenVAS to
+start the netstat tool via command-line, and parse the results.
+
+Many thanks to everyone who contributed to this release:
+Jan-Oliver Wagner.
+
