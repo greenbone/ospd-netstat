@@ -2,6 +2,8 @@
 
 # ospd-netstat
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/greenbone/PROJECT/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/greenbone/PROJECT/?branch=master)
+
 This is an OSP server implementation to allow GVM to remotely control the
 `netstat` tool.
 
